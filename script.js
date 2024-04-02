@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   const wrapper = document.querySelector(".wrapper");
   const loginLink = document.querySelector(".login-link");
   const registerLink = document.querySelector(".register-link");
@@ -6,18 +6,37 @@ document.addEventListener("DOMContentLoaded", function() {
   const iconClose = document.querySelector(".icon-close");
 
   registerLink.addEventListener("click", () => {
-      wrapper.classList.add("active");
+    wrapper.classList.add("active");
   });
 
   loginLink.addEventListener("click", () => {
-      wrapper.classList.remove("active");
+    wrapper.classList.remove("active");
   });
 
   btnPopup.addEventListener("click", () => {
-      wrapper.classList.add("active-popup");
+    wrapper.classList.add("active-popup");
   });
 
   iconClose.addEventListener("click", () => {
-      wrapper.classList.remove("active-popup");
+    wrapper.classList.remove("active-popup");
   });
 });
+
+function setError(input, message) {
+  const control = input.parentElement;
+  control.classList.add("error");
+  control.classList.remove("success");
+  control.querySelector(".error").innerText = message;
+}
+
+function setSuccess(input) {
+  const control = input.parentElement;
+  control.classList.remove("error");
+  control.classList.add("success");
+}
+
+function isValidEmail(email) {
+  const regex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/gi;
+  return regex.test(email)
+}
+

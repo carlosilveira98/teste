@@ -1,13 +1,16 @@
+/* Importar fonte do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* Reset de estilos básicos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif; 
 }
 
+/* Estilos globais */
 body {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +20,7 @@ body {
     background-position: center;
 }
 
+/* Estilos do cabeçalho */
 header {
     position: fixed;
     top: 0;
@@ -85,6 +89,7 @@ header {
     margin-right: 5px;
 }
 
+/* Wrapper para formulários */
 .wrapper {
     color: bisque;
     position: relative;
@@ -104,7 +109,7 @@ header {
 }
 
 .wrapper.active {
-    height: 520px;
+    height: 560px;
 }
 
 .wrapper.active-popup {
