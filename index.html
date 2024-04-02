@@ -16,7 +16,7 @@
 
     <header>
 
-        <h2 class="logo">|logo|</h2>
+        <h2 class="logo">Nossa logo aqui</h2>
         <!-- Inserir alguma logo depois -->
 
         <nav class="navigation">
@@ -31,7 +31,6 @@
 
     <main>
 
-        <section id="sign-register">
             <div class="wrapper">
                 <span class="icon-close"><ion-icon name="close"></ion-icon></span>
 
@@ -40,18 +39,18 @@
                     <form action="#" id="login-form">
                         <div class="input-box">
                             <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                            <input type="text" required>
+                            <input type="text" id="email-input">
                             <label>Email</label>
                         </div>
 
                         <div class="input-box">
                             <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                            <input type="password" required>
+                            <input type="password" id="password-input" required>
                             <label>Senha</label>
                         </div>
 
                         <div class="remeber-forgot">
-                            <label><input type="checkbox">Lembrar-me</label>
+                            <label><input type="checkbox" id="checkbox-input">Lembrar-me</label>
                             <a href="#">Esqueci minha senha</a>
                         </div>
 
@@ -70,30 +69,30 @@
 
                         <div class="input-box">
                             <span class="icon"><ion-icon name="person"></ion-icon></span>
-                            <input type="text" required>
+                            <input type="text" id="username-input" required>
                             <label>Nome de Usuário</label>
                         </div>
 
                         <div class="input-box">
                             <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                            <input type="email" required>
+                            <input type="email" id="email-input" required>
                             <label>Email</label>
                         </div>
 
                         <div class="input-box">
                             <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                            <input type="password" required>
+                            <input type="password" id="password-input" required>
                             <label>Senha</label>
                         </div>
 
                         <div class="input-box">
                             <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                            <input type="password" required>
+                            <input type="password" id="password-confirmation-input" required>
                             <label>Confirme sua Senha</label>
                         </div>
 
                         <div class="remeber-forgot">
-                            <label><input type="checkbox">Eu concordo com os <a href="#" class="register-link">termos de
+                            <label><input type="checkbox" id="checkbox-input">Eu concordo com os <a href="#" class="register-link">termos de
                                     uso</a></label>
                         </div>
 
@@ -106,7 +105,6 @@
                     </form>
                 </div>
             </div>
-        </section>
 
         <section id="about" class="section">
             <!-- Colocar texto do git -->
