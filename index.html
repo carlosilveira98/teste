@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Plataforma de gestão centralizada para aplicações de negócios, incluindo CRM, API e processos.">
+    <meta name="author" content="SI_T03_GP01">
+    <meta name="keywords" content="plataforma, gestão, centralizada, CRM, API, processos">
+    <title>Plataforma de Gestão Centralizada | HUB de Aplicativos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h2 class="logo">|logo|</h2>
+        <!-- Inserir alguma logo depois -->
+
+        <nav class="navigation">
+            <a href="#about"><ion-icon name="information-circle"></ion-icon> Sobre</a>
+            <a href="#resources"><ion-icon name="apps"></ion-icon> Recursos</a>
+            <a href="#plans"><ion-icon name="pricetag-outline"></ion-icon> Planos</a>
+            <a href="#support"><ion-icon name="help-circle-outline"></ion-icon> Suporte</a>
+            <button class="btnLogin-popup" href="#login">Login</button>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="sign-register">
+            <div class="wrapper">
+                <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+
+                <div class="form-box login">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+
+                        <div class="remeber-forgot">
+                            <label><input type="checkbox">Lembrar-me</label>
+                            <a href="#">Esqueci minha senha</a>
+                        </div>
+
+                        <button type="submit" class="btn">Login</button>
+
+                        <div class="login-register">
+                            <p>Não tem uma conta? <a href="#register" class="register-link">Registre aqui</a></p>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="form-box register">
+                    <h2>Registro</h2>
+                    <form action="#">
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="person"></ion-icon></span>
+                            <input type="text" required>
+                            <label>Nome de Usuário</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" required>
+                            <label>Senha</label>
+                        </div>
+
+                        <div class="remeber-forgot">
+                            <label><input type="checkbox">Eu concordo com os <a href="#" class="register-link">termos de
+                                    uso</a></label>
+                        </div>
+
+                        <button type="submit" class="btn">Criar conta</button>
+
+                        <div class="login-register">
+                            <p>Já tem uma conta? <a href="#login" class="login-link">Entre aqui</a></p>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <!-- Colocar texto do git -->
+        </section>
+
+        <section id="resources" class="section">
+            <!-- Inserir as features -->
+        </section>
+
+        <section id="plans" class="section">
+            <!-- Preço dos planos -->
+        </section>
+
+        <section id="support" class="section">
+            <!-- Suporte -->
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- colocar rodape -->
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
